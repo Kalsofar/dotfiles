@@ -1,0 +1,25 @@
+set from=""
+set use_from=yes
+set realname=""
+
+#IMAP
+set folder=
+set imap_user=
+#set imap_pass=""
+set spoolfile=+INBOX
+
+#SMTP
+set my_user=
+set smtp_url=""
+#set smtp_pass=""
+#set ssl_force_tls=yes
+set ssl_starttls=yes
+
+# other
+set markers=no
+set pager_index_lines=5
+set sort="threads"
+set sort_aux="last-date-received"
+
+# bindings
+bind index "^" imap-fetch-mail

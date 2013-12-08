@@ -1,0 +1,8 @@
+[user]
+	name = Kalsofar
+
+[diff]
+	tool = vimdiff
+
+[color]
+	ui = true

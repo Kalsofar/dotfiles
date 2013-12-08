@@ -1,0 +1,22 @@
+
+# Colors
+URxvt*background: black
+URxvt*foreground: white
+URxvt*color4: RoyalBlue
+URxvt*color12: RoyalBlue
+
+# Fonts
+#URxvt*font: 9x15
+URxvt*font: -misc-fixed-medium-r-*-*-15-*-*-*-*-*-*-*
+URxvt*boldFont: -misc-fixed-bold-r-*-*-15-*-*-*-*-*-*-*
+
+# TERM name
+#URxvt*termName: xterm-256color
+
+# Scrollbars
+URxvt*scrollBar: true
+URxvt*scrollstyle: plain
+URxvt*scrollBar_right: true
+
+# Window size
+URxvt*geometry: 150x55
