@@ -1,25 +1,30 @@
-set from=""
+set from="user@email"
 set use_from=yes
-set realname=""
+set realname="First Last"
 
 #IMAP
-set folder=
-set imap_user=
+account-hook imap://hostname "unset ssl_verify_host"
+set folder=imap://hostname
+set imap_user=username
 #set imap_pass=""
+set record="=Sent"
+set postponed="=Drafts"
 set spoolfile=+INBOX
 
 #SMTP
-set my_user=
-set smtp_url=""
-#set smtp_pass=""
-#set ssl_force_tls=yes
+#set my_user=username
+set smtp_url="smtp://username@hostname:587"
+set ssl_force_tls=yes
 set ssl_starttls=yes
+set smtp_authenticators=plain
+#set smtp_pass=""
 
-# other
+#Other
+set certificate_file=~/.mutt_certificates
 set markers=no
 set pager_index_lines=5
 set sort="threads"
 set sort_aux="last-date-received"
 
-# bindings
+#Bindings
 bind index "^" imap-fetch-mail
